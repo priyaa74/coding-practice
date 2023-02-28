@@ -2,6 +2,7 @@ import ProgressBar from './components/ProgressBar';
 import './App.css';
 import Stopwatch from './components/Stopwatch';
 import Timer from './components/Timer';
+import Container from './InfiniteScroll/Container';
 
 function App() {
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -13,6 +14,7 @@ function App() {
       <ProgressBar/>
       <Stopwatch/>
       <Timer targetDate={dateTimeAfterThreeDays} />
+      <Container/>
     </div>
   );
 }
